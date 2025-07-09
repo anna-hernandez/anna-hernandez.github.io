@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Enhancing the capabilities of LLMs"
+title: "Enhancing LLM capabilities"
 author_profile: true
 redirect_from: 
   - /about/
