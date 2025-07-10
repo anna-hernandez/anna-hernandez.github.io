@@ -14,7 +14,7 @@ There are two approaches:
 They both have pros and cons, as listed below:
 
 | Case | Pros | Cons |
----------------------
+:------::-----::-----:
 | Modifying the weights | 
 - the model really learns
 - less infrastructure to store additional sources 
