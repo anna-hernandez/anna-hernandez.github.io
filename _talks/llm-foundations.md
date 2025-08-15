@@ -1,3 +1,12 @@
+---
+title: "Talk 1 on Relevant Topic in Your Field"
+collection: talks
+type: "Talk"
+permalink: /talks/llm-foundations
+venue: "llm-foundations"
+date: 2012-03-01
+location: "San Francisco, CA, USA"
+---
 
 # LLM foundations
 
