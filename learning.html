@@ -44,176 +44,57 @@
                         <span class="text-primary">Learnings.</span>
                     </h1>
                     <div class="subheading mb-5">
+                        Core Concepts in Machine Learning
+                    </div>
+                    <ol>Concepts</ol>
+                        <li>Fitting: the process of finding the best parameter values to build the model, using the training data</li>
+                        <li>Optimisation: the way in which to find the best parameters (fitting) in the most efficient way. Usually, the parameter value space is vast, and exploring all possible values or ways to get to the optimal value is... tedious and lengthy to say the least. Optimisation techniques guide us to get there faster.</li>
+                        <li>MLE, LL, NLL</li>
+                    <ol>Types of ML</ol>
+                        <li>Supervised Learning</li>
+                        <li>Unsupervised Learning</li>
+                        <li>Semi-Supervised Learning</li>
+                        <li>Reinforcement Learning</li>
+                    <ol>Model Evaluation</ol>
+                        <li>Train/Test Split</li>
+                        <li>Cross-Validation</li>
+                        <li>Bias-Variance Tradeoff</li>
+                    <ol>Performance Metrics</ol>
+                        <li>Classification Metrics</li>
+                            <ul>
+                                <li>Accuracy</li>
+                                <li>Precision</li>
+                                <li>Recall</li>
+                                <li>F1-Score</li>
+                                <li>ROC-AUC</li>
+                            </ul>
+                        <li>Regression Metrics</li>
+                            <ul>
+                                <li>Mean Absolute Error (MAE)</li>
+                                <li>Mean Squared Error (MSE)</li>
+                                <li>Root Mean Squared Error (RMSE)</li>
+                                <li>R-squared</li>
+                            </ul>
+                    </ol>
+                    <div class="subheading mb-5">
                         Traditional Machine Learning Algorithms
                     </div>
                     <p class="lead mb-5">A summary of core (if not <it>the</it> core) algorithms that compose traditional machine learning techniques: Logistic Regression, Decision Trees, Random Forests, Gradient Boosting Machines, Support Vector Machines, K-Nearest Neighbors, K-Means Clustering, Hierarchical Clustering, Principal Component Analysis, Natural Language Processing</p>
                     <div class="subheading mb-5">
                         Logistic Regression
                     </div>
-                    <p class="lead mb-5">Logistic Regression is a classification method that fits the data points in the training set to a line and puts that line through a logistic function that allocates the point to one of two classes. This way, when a new data point appears, and it's run through the model, this maps the input value to a value between 0 and 1, which can be interpreted as a probability.
+                    <p class="lead mb-5">Logistic Regression is a classification method that fits the data points in the training set to a line and puts that line through a sigmoid function that separates the points into one of two classes. When a new data point appears, and it's run through the model, this maps the input value to a value between 0 and 1, which can be interpreted as a probability.
+
+                    The fitting of the line is done through Maximum Likelihood Estimation (MLE), which finds the parameters that maximize how likely it is to observe the data based on the model that we are buildling. The optimization is usually performed using algorithms like Gradient Descent or Newton-Raphson.
+                    </p>
+                    <div class="subheading mb-5">
+                        Gradient Descent
+                    </div>
+                    <p class="lead mb-5">Gradient descent is an optimisation algorithm used in machine learning to adjust the value of the weights (parameters) of the model so that the model gets closer to its optimal (i.e. minimises the cost function). Gradient descent calculates the gradient of a function at a given point and substracts that value multiplied by a small factor (called the learning rate) to the current value of the weights. The gradient points to the direction of growth of the function, hence the negative of the gradient (gradient substraction) points to the direction of decrease of the function. This means that the new value of the weights should provide s a lower value of the cost function. This process is repeated iteratively until convergence is reached (i.e. the weights no longer change significantly between iterations) or a predefined number of iterations is completed.
                     </p>
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- Experience-->
-            <!-- <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">December 2011 - March 2013</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Junior Web Designer</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2010 - December 2011</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Web Design Intern</h3>
-                            <div class="subheading mb-3">Shout! Media Productions</div>
-                            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2010</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" /> -->
-            <!-- Education-->
-            <!-- <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">University of Colorado Boulder</h3>
-                            <div class="subheading mb-3">Bachelor of Science</div>
-                            <div>Computer Science - Web Development Track</div>
-                            <p>GPA: 3.23</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">James Buchanan High School</h3>
-                            <div class="subheading mb-3">Technology Magnet Program</div>
-                            <p>GPA: 3.56</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" /> -->
-            <!-- Skills-->
-            <!-- <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-                    </ul>
-                    <div class="subheading mb-3">Workflow</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" /> -->
-            <!-- Interests-->
-            <!-- <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-                    <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
-                </div>
-            </section>
-            <hr class="m-0" /> -->
-            <!-- Awards-->
-            <!-- <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Google Analytics Certified Developer
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Mobile Web Specialist - Google Certification
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2
-                            <sup>nd</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - James Buchanan High School - Hackathon 2006
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            3
-                            <sup>rd</sup>
-                            Place - James Buchanan High School - Hackathon 2005
-                        </li>
-                    </ul>
-                </div>
-            </section> -->
         </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
