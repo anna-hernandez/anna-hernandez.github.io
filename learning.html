@@ -41,10 +41,10 @@
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
                     <h1 class="mb-0">
-                        <span class="text-primary">Learnings.</span>
+                        <span class="text-primary">Core Concepts in Machine Learning.</span>
                     </h1>
                     <div class="subheading mb-5">
-                        Core Concepts in Machine Learning
+                        Concepts
                     </div>
                     <ol>Concepts</ol>
                         <li>Fitting: the process of finding the best parameter values to build the model, using the training data</li>
@@ -76,10 +76,9 @@
                                 <li>R-squared</li>
                             </ul>
                     </ol>
-                    <div class="subheading mb-5">
-                        Traditional Machine Learning Algorithms
-                    </div>
+                    <span class="text-primary">Traditional Machine Learning Algorithms</span>
                     <p class="lead mb-5">A summary of core (if not <it>the</it> core) algorithms that compose traditional machine learning techniques: Logistic Regression, Decision Trees, Random Forests, Gradient Boosting Machines, Support Vector Machines, K-Nearest Neighbors, K-Means Clustering, Hierarchical Clustering, Principal Component Analysis, Natural Language Processing</p>
+                    <span class="text-primary">Linear Classifiers</span>
                     <div class="subheading mb-5">
                         Logistic Regression
                     </div>
@@ -91,6 +90,15 @@
                         Gradient Descent
                     </div>
                     <p class="lead mb-5">Gradient descent is an optimisation algorithm used in machine learning to adjust the value of the weights (parameters) of the model so that the model gets closer to its optimal (i.e. minimises the cost function). Gradient descent calculates the gradient of a function at a given point and substracts that value multiplied by a small factor (called the learning rate) to the current value of the weights. The gradient points to the direction of growth of the function, hence the negative of the gradient (gradient substraction) points to the direction of decrease of the function. This means that the new value of the weights should provide s a lower value of the cost function. This process is repeated iteratively until convergence is reached (i.e. the weights no longer change significantly between iterations) or a predefined number of iterations is completed.
+
+                    There are different types of gradient descent. The classic one, takes each point of the training set one by one and updates the weights accordingly. In practice, this is the most accurate way to update the weights but not the most efficient. So other versions have been created which, although they are not as accurate at each iteration, they are much cheaper in memory and time, i.e. they are faster. And because they are faster, they also allow us to run more iterations than classic gradient descent, hence we pretty much get to the same point.
+                    
+                    This is called Batch Gradient Descent. Another version, Stochastic Gradient Descent, takes one random point from the training set at each iteration to update the weights. A third version, Mini-Batch Gradient Descent, takes a small random subset of points from the training set at each iteration to update the weights. Each version has its pros and cons in terms of convergence speed and stability.
+                    <span>Check out mini-batch, stochastic deefinitions</span>
+                    We also have adaptive gradient descent, which has a changing learning rate based on the steepness of the gradient. <span>Adam, AdaGrad, RMSProp are examples of adaptive gradient descent algorithms.</span>
+                    <span>Momentum gradient descent</span>
+                    
+                    As an overall tip: normalise your data before applying gradient descent, as this will help the algorithm converge faster and more reliably.
                     </p>
                 </div>
             </section>
